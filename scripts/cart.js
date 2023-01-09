@@ -19,7 +19,7 @@ const initCart = async () => {
 	const cartContainer = document.getElementById("js-cart-list");
 	const cartHeader = document.getElementById("js-cart-header");
 	const cartFooter = document.getElementById("js-cart-footer");
-	const cartQuantity = document.getElementById("js-cart-counter");
+	const cartQuantity = document.getElementById("js-cart-header-counter");
 	const cartTotal = document.getElementById("js-cart-footer-total");
 	const cartEmpty = document.getElementById("js-cart-empty");
 	const cartButtonCounter = document.getElementById("js-cart-counter");
