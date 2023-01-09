@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="E-commerce de roupas bonitas">
+  <link rel="stylesheet" href="./dist/index.min.css">
+  <script type="module" src="./dist/main.js" defer></script>
+  <title>Insider</title>
+</head>
+
+<body>
+  <div class="header-bg">
+    <header class="header">
+
+      <nav aria-label="Navegação">
+        <button id="js-back-button" class="back-button" aria-label="Fechar menu">
+          <img height="24" width="24" src="./assets/arrow_circle_left_FILL0_wght400_GRAD0_opsz24.svg" alt="icone de seta para a esquerda">
+        </button>
+
+        <div class="logo">
+          <img width="120" height="24" src="./assets/Insider_Logotipo.png" alt="Insider logo">
+        </div>
+
+        <button id="js-menu-button" class="menu-button" aria-label="Abrir menu">
+          <img src="./assets/shopping-bag.svg" alt="icone de bolsa de compras">
+        </button>
+      </nav>
+
+    </header>
+  </div>
+
+  <main class="container">
+    <ul id="js-products-list" class="products-list">
+    </ul>
+
+    <aside id="js-cart" class="cart">
+      <div id="js-cart-empty" class="cart-empty">
+        <img src="./assets/shopping-bag.svg" alt="icone de bolsa de compras">
+        <p>Sua cesta está vazia. adicione um produto. :)</p>
+      </div>
+
+      <div id="js-cart-header" class="cart-header">
+        <img src="./assets/shopping-bag.svg" alt="icone de bolsa de compras">
+        <h3 id="js-cart-header-counter"></h3>
+      </div>
+
+      <ul id="js-cart-list" class="cart-list">
+      </ul>
+
+      <div id="js-cart-footer" class="cart-footer">
+        <h3 id="js-cart-footer-total"></h3>
+      </div>
+
+    </aside>
+  </main>
+
+</body>
+
+</html>
