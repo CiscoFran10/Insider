@@ -19,14 +19,16 @@ const initCart = async () => {
 	const cartContainer = document.getElementById("js-cart-list");
 	const cartHeader = document.getElementById("js-cart-header");
 	const cartFooter = document.getElementById("js-cart-footer");
-	const cartQuantity = document.getElementById("js-cart-header-counter");
+	const cartQuantity = document.getElementById("js-cart-counter");
 	const cartTotal = document.getElementById("js-cart-footer-total");
 	const cartEmpty = document.getElementById("js-cart-empty");
+	const cartButtonCounter = document.getElementById("js-cart-counter");
 
 	if (products.length === 0) {
 		cartHeader.classList.remove("active");
 		cartFooter.classList.remove("active");
 		cartEmpty.classList.add("active");
+		cartButtonCounter.innerText = 0;
 	} else {
 		cartHeader.classList.add("active");
 		cartFooter.classList.add("active");
@@ -42,6 +44,7 @@ const initCart = async () => {
 			.toFixed(2)
 			.replace(".", ",")}`;
 		cartQuantity.innerText = `Sua cesta tem ${totalQuantity} item`;
+		cartButtonCounter.innerText = totalQuantity;
 	}
 
 	if (cart && cartContainer) {

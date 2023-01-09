@@ -103,6 +103,13 @@
 		background: none;
 	}
 
+	.cart-counter {
+		top: -5px;
+		right: 5px;
+		pointer-events: none;
+		position: absolute;
+	}
+
 	.back-button.active {
 		display: block;
 		position: absolute;
